@@ -4,6 +4,7 @@
     --main-font-color: #414141;
     --sub-font-color: #ffffff;
     --button-color: #E02044;
+    --footer-color: #F5F5F5;
 }
 *{
     margin: 0;
@@ -70,20 +71,28 @@ header{
 }
 
 /* main-content */
+.list-header{
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 .plan-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 30px 50px;
 }
-.plan-list .plan:last-child{
-    margin-left: auto;
-}
 .plan-list .plan{
-    width: 300px;
-    height: 400px;
+    width: 22.5%;
+    height: 310px;
     box-shadow: 0 0 11px rgba(0,0,0,.1);
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
+/* .plan-list > .plan + .plan {
+    margin-left: 30px;
+} */
 .plan img{
     width: 100%;
 }
@@ -93,4 +102,21 @@ header{
 .plan .travel-date,
 .plan .travel-member{
     font-size: 20px;
+}
+.plan-detail{
+    text-align: center;
+    margin-top: 10px;
+}
+.plan-detail > p + p{
+    margin-top: 10px;
+}
+
+/* footer */
+footer{
+    background-color: var(--footer-color);
+    text-align: center;
+    padding: 2px 0;
+}
+footer p{
+    font-size: 15px;
 }
