@@ -85,14 +85,11 @@ header{
 }
 .plan-list .plan{
     width: 22.5%;
-    height: 310px;
     box-shadow: 0 0 11px rgba(0,0,0,.1);
     margin-left: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
-/* .plan-list > .plan + .plan {
-    margin-left: 30px;
-} */
 .plan img{
     width: 100%;
 }
