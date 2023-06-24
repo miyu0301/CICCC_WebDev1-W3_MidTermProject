@@ -2,9 +2,10 @@
 
 :root{
     --main-font-color: #414141;
-    --sub-font-color: #ffffff;
     --button-color: 224,32,68;
-    --footer-color: #F5F5F5;
+    --sub-font-color: #ffffff;
+    --main-background-color: #F5F5F5;
+    --footer-color: #EAEAEA;
 }
 *{
     margin: 0;
@@ -14,6 +15,7 @@
 body{
     color: var(--main-font-color);
     font-family: 'Noto Sans', sans-serif;
+    background-color: var(--main-background-color);
 }
 main{
     position: relative;
@@ -31,8 +33,6 @@ main::before{
     bottom: -3px;
     left: -3px;
     right: -3px;
-    /* width: auto;
-    height: auto; */
     background-attachment: fixed;
     height: auto;
     min-height: 100vh;
@@ -50,16 +50,23 @@ header{
 .header-content{
     display: flex;
     justify-content: space-between;
+    font-size: 24px;
+    padding: 5px 10px;
+}
+.header-content a{
+    text-decoration: none;
+}
+.header-content a:visited{
+    color: var(--sub-font-color);
 }
 
 /* board-header */
 .board-header-wrap{
-    padding: 40px;
+    padding: 30px;
     padding-top: 70px;
 }
 .board-header{
     background-color: rgba(224,32,68,0.3);
-    /* margin: 100px 30px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,10 +77,12 @@ header{
 .board-content{
     padding: 0 30px;
     display: flex;
+    overflow: scroll;
 }
 .day-board{
     background-color: rgba(225,255,255,0.4);
     width: 270px;
+    min-width: 270px;
     margin-right: 20px;
     height: 100%;
     border-radius: 8px;
@@ -84,10 +93,6 @@ header{
     justify-content: space-between;
     font-size: 24px;
     margin-bottom: 10px;
-}
-.day-board-content{
-    /* background-color: #E02044; */
-    /* padding: 0 10px 10px 10px; */
 }
 .plan{
     margin-bottom: 20px;
@@ -115,7 +120,7 @@ header{
 .plan textarea{
     border-radius: 8px;
     border: none;
-    width: 100%;
+    min-width: 100%;
     padding: 9px;
     box-shadow: 1px 1px 5px rgba(0,0,0,.1);
     resize: none;   

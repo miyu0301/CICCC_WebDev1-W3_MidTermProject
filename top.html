@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
     <title>Top</title>
 </head>
 <body>
     <header>
         <div class="header-content">
             <p class="site-name">Travel Planner</p>
-            <p class="menu"><link rel="stylesheet" href="#">TOP</p>
+            <p class="menu"><a href="./top.html">TOP</a></p>
         </div>
         <div class="line"></div>
     </header>
@@ -20,13 +21,18 @@
             <div class="cover-header-content">
                 <p>Welcome to our Travel Planning Site, 
                     where you can weave your desired destinations, culinary delights, and all your wishes into a meticulously crafted itinerary.</p>
-                <button>Create</button>
+                <button onclick="location.href='./edit.html'">Create</button>
             </div>
         </div>
         <div class="main-content">
             <div class="list-header">
                 <h1>Your Plans</h1>
-                <input type="text" class="search">
+                <div class="search-box">
+                    <input type="text" class="search">
+                    <button type="submit">
+                        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                    </button>
+                </div>
             </div>
             <div class="plan-list">
                 <div class="plan">
