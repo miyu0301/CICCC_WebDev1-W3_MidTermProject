@@ -1,0 +1,13 @@
+.list-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-list{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.plan-list .plan{
+    width: auto;
+}

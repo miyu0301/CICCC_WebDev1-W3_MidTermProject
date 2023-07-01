@@ -124,6 +124,11 @@ header{
     padding: 9px;
     box-shadow: 1px 1px 5px rgba(0,0,0,.1);
     resize: none;   
+    font-family: 'Noto Sans', sans-serif;
+}
+.plan input:focus,
+.plan textarea:focus{
+  outline: none;
 }
 .plan button{
     background-color: rgba(var(--button-color),.3) ;

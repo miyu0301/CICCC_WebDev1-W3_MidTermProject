@@ -1,0 +1,8 @@
+.board-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.day-board{
+    margin-bottom: 10px;
+}
